@@ -1,12 +1,13 @@
 # GET /search
 
-Returns list of users from PŁ(https://adm.edu.p.lodz.pl/user/) in user friendly view format.
+Returns specific list of users from PŁ(https://adm.edu.p.lodz.pl/user/) in user friendly view format.<br>
+There is a button under each user that allows you to download the vCard and lets you easily add a user to your contacts
 
 # Resource URL
 
-`http://localhost:8080/search?name={first_name}`
-`http://localhost:8080/search?name={last_name}`
-`http://localhost:8080/search?name={first_name}+{last_name}`
+`http://localhost:8080/search?name={first_name}`<br>
+`http://localhost:8080/search?name={last_name}`<br>
+`http://localhost:8080/search?name={first_name}+{last_name}`<br>
 
 
 ## Resource Information
