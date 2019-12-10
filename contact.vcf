@@ -1,0 +1,6 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:ez-vcard 0.10.5
+N:Kapusta;Paweł
+FN;CHARSET=iso-8859-1:Paweł Kapusta
+END:VCARD

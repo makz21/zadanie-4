@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <link rel="stylesheet" type="text/css"
+          href="https://adm.edu.p.lodz.pl/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css"/>
+    <script id="firstthemesheet" type="text/css">
+    </script>
+    <link rel="stylesheet" type="text/css"
+          href="https://adm.edu.p.lodz.pl/theme/styles.php/adaptable/1575871248_1/all"/>
+    <link rel="stylesheet" type="text/css" href="https://adm.edu.p.lodz.pl/blocks/quickfindlist/css/style.css"/>
+    <script type="text/javascript">
+
+        //]]>
+    </script>
+    <!-- CSS print media -->
+    <link rel="stylesheet" type="text/css" href="https://adm.edu.p.lodz.pl/theme/adaptable/style/print.css"
+          media="print">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Chrome, Firefox OS and Opera on Android -->
+    <meta name="theme-color" content="#558C89"/>
+
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#558C89"/>
+
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#558C89"/>
+
+    <!-- Load FA icons -->
+    <link rel="stylesheet" href="https://adm.edu.p.lodz.pl/theme/adaptable/style/font-awesome.min.css">
+
+    <!-- Load Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i' rel='stylesheet' type='text/css'>
+
+</head>
+<body id="page-report">
+<th:block th:each="user : ${users}" th:remove="tag">
+
+<div class="user-profile-container">
+    <div class="user-profile">
+        <div class="user-image-container">
+            <a><img
+                    src="https://adm.edu.p.lodz.pl/pluginfile.php/1579/user/icon/adaptable/f1?rev=1287165"
+                    class="userpicture" width="100" height="100"/></a>
+        </div>
+        <div class="user-info">
+            <h3 th:text="${user.getFullName()}"></h3>
+            <h4>Pracownik PŁ</h4>
+            <div class="extra-info">
+                <ul>
+                    <li>
+                        <span class="item-title">Pracownik PŁ</span>
+                        <span class="item-content">Kliknij Generate vCard aby wygenerować wizytówkę</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sendmail-link btn btn-default"><img class="smallicon"
+                                                            src="https://adm.edu.p.lodz.pl/theme/image.php/adaptable/core/1575871248/i/email"
+                                                            alt=""/>
+                <a th:href="@{/generateVCard(firstName=${user.getFirstName()}, lastName=${user.getLastName()})}">Generate vCard</a></div>
+        </div>
+    </div>
+</div>
+</th:block>
+</body>
+</html>
