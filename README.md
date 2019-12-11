@@ -14,8 +14,10 @@ There is a button under each user that allows you to download the vCard and lets
 
 |                |                          	|                         
 |----------------|-------------------------------|
-|Response formats|`vcf` file           |
+|Response format|website with list of users           |
 |Requires authentication?         |No            |
+|Response format of download vCard button         |.vcs file            |
+
 
 
 # Example Request
