@@ -16,7 +16,7 @@ There is a button under each user that allows you to download the vCard and lets
 |----------------|-------------------------------|
 |Response format|website with list of users           |
 |Requires authentication?         |No            |
-|Response format of download vCard button         |.vcs file            |
+|Response format of generate vCard button         |.vcs file            |
 
 
 
@@ -29,7 +29,7 @@ There is a button under each user that allows you to download the vCard and lets
   <img src="https://i.imgur.com/zwIOh7I.png" width="350" title="hover text">
 </p>
 
-# Action when you click Download vCard 
+# Action when you click Generate vCard 
 <p align="center">
   <img src="https://i.imgur.com/r3ncv43.png" width="350" title="hover text">
 </p>
