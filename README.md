@@ -24,6 +24,11 @@ There is a button under each user that allows you to download the vCard and lets
 
 `GET localhost:8080/search?name=paweł+kapusta`
 
+# Example Site Response for `/search?name=nowak`
+<p align="center">
+  <img src="https://i.imgur.com/r3ncv43.png" width="350" title="hover text">
+</p>
+
 # Example .vcs Response 
 
 ```
